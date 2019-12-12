@@ -5773,6 +5773,7 @@ module Writexlsx
     # Write the cell value <v> element.
     #
     def write_cell_value(value = '') #:nodoc:
+      return write_cell_formula('=NA()') if !value.nil? && value.is_a?(Float) && value.nan?
       value ||= ''
       value = value.to_i if value == value.to_i
       @writer.data_element('v', value)
