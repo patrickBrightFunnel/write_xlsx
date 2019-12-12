@@ -3,10 +3,10 @@ require 'write_xlsx/col_name'
 
 module Writexlsx
   module Utility
-    ROW_MAX  = 2048576  # :nodoc:
-    COL_MAX  = 36384    # :nodoc:
-    STR_MAX  = 52767    # :nodoc:
-    SHEETNAME_MAX = 61  # :nodoc:
+    ROW_MAX  = 3048576  # :nodoc:
+    COL_MAX  = 56384    # :nodoc:
+    STR_MAX  = 72767    # :nodoc:
+    SHEETNAME_MAX = 91  # :nodoc:
 
     #
     # xl_rowcol_to_cell($row, col, row_absolute, col_absolute)
